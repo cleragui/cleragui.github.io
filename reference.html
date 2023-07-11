@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reference</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="hand-drawn-icon.png">
+    <script type="text/javascript" src="jquery-3.7.0.js"></script>
+</head>
+<body>
+    <nav>
+        <div>
+            <span id="project-name"><a id="Logo-name" href="index.html"><img src="hand-drawn-icon.png" alt="">CLERA</a></span>
+            <a href="guide.html">Guide</a>
+            <a href="news.html">News</a>
+            <a href="projects.html">Projects</a>
+            <a href="changelog.html">Changelog</a>
+            <a href="reference.html">Reference</a>
+            <a href="#" id="donate-button">Donate</a>
+        </div>
+    </nav>
+    <div id="side-panel">
+        <div id="panel-links">
+            <p style="font-family: Arial, Helvetica, sans-serif; margin-bottom: 2px;">Reference</p>
+            <p><a id="button-link">Button Widget</a></p>
+            <p><a id="input-link">Input Widget</a></p>
+            <p><a id="text-link">Text Widget</a></p>
+            <p><a id="image-link">Image Widget</a></p>
+            <p><a id="checkbox-link">Checkbox Widget</a></p>
+            <p><a id="radiobutton-link">Radiobutton Widget</a></p>
+            <p><a id="textarea-link">Textarea Widget</a></p>
+            <p><a id="listwidget-link">Listwidget Widget</a></p>
+            <p><a id="select-link">Select Widget</a></p>
+            <p><a id="progressbar-link">Progressbar Widget</a></p>
+            <p><a id="slider-link">Slider Widget</a></p>
+            <p><a id="dial-link">Dial Widget</a></p>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        
+        <!-- BUTTON WIDGET -->
+        <section class="ref-section" id="button-widget">
+            <div class="ref-title">BUTTON WIDGET</div>
+            
+            <div class="ref-properties">
+                <p><span>value </span> =  ''</p>
+                <p><span>func </span> =  None</p>
+                <p><span>icon </span> =  None</p>
+                <p><span>id </span> =  None</p>
+                <p><span>disabled </span> =  False</p>
+                <p><span>default </span> =  False</p>
+                <p><span>grid </span> =  (None, None)</p>
+                <p><span>sizepolicy </span> =  (None, None)</p>
+                <p><span>checkable </span> =  False</p>
+                <p><span>checked </span> =  False</p>
+                <p><span>hidden </span> =  False</p>
+                <p><span>focus </span> =  True</p>
+                <p><span>icon_size </span> =  None</p>
+                <p><span>statustip </span> =  None</p>
+                <p><span>tooltip </span> =  None</p>
+                <p><span>shortcut </span> =  None</p>
+            </div>
+            
+            <table class="ref-table">
+                <th style="width: 15%">Type</th><th style="width:15%">Name</th><th>Meaning</th>
+                <tr>
+                    <td> any      </td>
+                    <td> value      </td>
+                    <td> define text displayed on button                                                                                                                                                         </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> func       </td>
+                    <td> function to be executed when button is clicked                                                                                                                                          </td>
+                </tr>
+            
+                <tr>
+                    <td> str      </td>
+                    <td> icon       </td>
+                    <td> path to icon to be displayed on button                                                                                                                                                  </td>
+                </tr>
+            
+                <tr>
+                    <td> any      </td>
+                    <td> id         </td>
+                    <td> Widget id for representing and calling widget in other code parts and styling                                                                                                           </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> disabled   </td>
+                    <td> set button disabled or unfunctional. Lacks interaction. default False                                                                                                                   </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> default    </td>
+                    <td> make button the default selected button                                                                                                                                                 </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> grid       </td>
+                    <td> Tuple (Horizontal, Vertical). set grid occupy position. works with the Grid() Element                                                                                                   </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> sizepolicy </td>
+                    <td> Tuple (Horizontal, Vertical). set widget stretch rule. Takes "fixed" for widget stay fixed on window size change. "expand" for widget to stretch in the direction of window size change </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> checkable  </td>
+                    <td> set button checkeable, a state of selected and unselected with each button interaction. default False                                                                                   </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> checked    </td>
+                    <td> set button slected default on application launch. default False                                                                                                                         </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> hidden     </td>
+                    <td> hide Widget                                                                                                                                                                             </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> focus      </td>
+                    <td> set widget focused                                                                                                                                                                      </td>
+                </tr>
+            
+                <tr>
+                    <td> int      </td>
+                    <td> icon_size  </td>
+                    <td> set button icon size                                                                                                                                                                    </td>
+                </tr>
+            
+                <tr>
+                    <td> any      </td>
+                    <td> statustip  </td>
+                    <td> set statusbar message for the widget                                                                                                                                                    </td>
+                </tr>
+            
+                <tr>
+                    <td> any      </td>
+                    <td> tooltip    </td>
+                    <td> set tooltip value for button                                                                                                                                                            </td>
+                </tr>
+            
+                <tr>
+                    <td> str      </td>
+                    <td> shortcut   </td>
+                    <td> set hotkey fot the button                                                                                                                                                               </td>
+                </tr>
+            
+            </table>
+        </section>
+    
+        <!-- INPUT WIDGET -->
+        <section class="ref-section" id="input-widget">
+            <div class="ref-title">INPUT WIDGET</div>
+            
+            <div class="ref-properties">
+                <p><span>placeholder </span> =  None</p>
+                <p><span>id </span> =  None</p>
+                <p><span>value </span> =  None</p>
+                <p><span>type </span> =  STANDARD</p>
+                <p><span>diabled </span> =  False</p>
+                <p><span>readonly </span> =  False</p>
+                <p><span>maxlength </span> =  None</p>
+                <p><span>hidden </span> =  False</p>
+                <p><span>font </span> =  None</p>
+                <p><span>fontsize </span> =  None</p>
+                <p><span>text_changed </span> =  None</p>
+                <p><span>return_pressed </span> =  None</p>
+                <p><span>editing_finished </span> =  None</p>
+                <p><span>text_edited </span> =  None</p>
+                <p><span>selection_changed </span> =  None</p>
+                <p><span>sizepolicy </span> =  (None, None)</p>
+                <p><span>grid </span> =  (None, None)</p>
+            </div>
+            
+            <table class="ref-table">
+                <th style="width: 15%">Type</th><th style="width:15%">Name</th><th>Meaning</th>
+                <tr>
+                    <td> any      </td>
+                    <td> placeholder       </td>
+                    <td> set placeholder text for the widget                                                                                                                                                      </td>
+                </tr>
+            
+                <tr>
+                    <td> any      </td>
+                    <td> id                </td>
+                    <td> Widget id for representing and calling widget in other code parts and styling                                                                                                            </td>
+                </tr>
+            
+                <tr>
+                    <td> any      </td>
+                    <td> value             </td>
+                    <td> sets default value of the input widget                                                                                                                                                   </td>
+                </tr>
+            
+                <tr>
+                    <td> str      </td>
+                    <td> type              </td>
+                    <td> set the input widget type. default STANDARD. TYPES : password, standard and noecho                                                                                                       </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> disabled          </td>
+                    <td> set input box disabled or uneditable. Lacks interaction, usually inactive. default False                                                                                                 </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> readonly          </td>
+                    <td> set input box to read only. visually active but value unchangeable. default False                                                                                                        </td>
+                </tr>
+            
+                <tr>
+                    <td> int      </td>
+                    <td> maxlength         </td>
+                    <td> set maximm input value capacity                                                                                                                                                          </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> hidden            </td>
+                    <td> hides input widget. default False                                                                                                                                                        </td>
+                </tr>
+            
+                <tr>
+                    <td> str      </td>
+                    <td> font              </td>
+                    <td> set font family of the input widget                                                                                                                                                      </td>
+                </tr>
+            
+                <tr>
+                    <td> int      </td>
+                    <td> fontsize          </td>
+                    <td> set the font size of the input widget                                                                                                                                                    </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> text_changed      </td>
+                    <td> fucntion to execute if input value is changed                                                                                                                                            </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> return_pressed    </td>
+                    <td> fucntion to execute if "enter" key is pressed                                                                                                                                            </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> editing_finished  </td>
+                    <td> fucntion to execute when input value change is complete                                                                                                                                  </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> text_edited       </td>
+                    <td> function to execute in a value is added or removed.                                                                                                                                      </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> selection_changed </td>
+                    <td> function to execute if a selected value is changed.                                                                                                                                      </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> sizepolicy        </td>
+                    <td> Tuple (Horizontal, Vertical). set widget stretch rule. Takes "fixed" for widget stay fixed on window size change. "expand" for widget to stretch in the direction of window size change. </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> grid              </td>
+                    <td> Tuple (Horizontal, Vertical). set grid occupy position. works with the Grid() Element.                                                                                                   </td>
+                </tr>
+            
+            </table>
+        </section>
+    
+        <!-- TEXT WIDGET -->
+        <section class="ref-section" id="text-widget">
+            <div class="ref-title">TEXT WIDGET</div>
+            
+            <div class="ref-properties">
+                <p><span>value </span> =  ''</p>
+                <p><span>id </span> =  None</p>
+                <p><span>link </span> =  None</p>
+                <p><span>hovered </span> =  None</p>
+                <p><span>clicked </span> =  None</p>
+                <p><span>buddy </span> =  None</p>
+                <p><span>alignment </span> =  None</p>
+                <p><span>wordwrap </span> =  False</p>
+                <p><span>grid </span> =  (None, None)</p>
+                <p><span>sizepolicy </span> =  (None, None)</p>
+                <p><span>hidden </span> =  False</p>
+            </div>
+            
+            <table class="ref-table">
+                <th style="width: 15%">Type</th><th style="width:15%">Name</th><th>Meaning</th>
+                <tr>
+                    <td> any      </td>
+                    <td> value      </td>
+                    <td> set text value                                                                                                                                                                           </td>
+                </tr>
+            
+                <tr>
+                    <td> any      </td>
+                    <td> id         </td>
+                    <td> Widget id for representing and calling widget in other code parts and styling                                                                                                            </td>
+                </tr>
+            
+                <tr>
+                    <td> str      </td>
+                    <td> link       </td>
+                    <td> set hyperlink for widget.                                                                                                                                                                </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> hovered    </td>
+                    <td> fucntion to execute if widget is hovered or mouse pointer is moved over he widget                                                                                                        </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> clicked    </td>
+                    <td> function to execute if widget is clicked                                                                                                                                                 </td>
+                </tr>
+            
+                <tr>
+                    <td> str      </td>
+                    <td> buddy      </td>
+                    <td> ...                                                                                                                                                                                      </td>
+                </tr>
+            
+                <tr>
+                    <td> str      </td>
+                    <td> alignment  </td>
+                    <td> sets alignment for text widget. ALIGNMENTS: Center, Justify, Right, Left, Top, Bottom, Hcenter, Vcenter                                                                                  </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> wordwrap   </td>
+                    <td> contain word overflow in application window. default False.                                                                                                                              </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> grid       </td>
+                    <td> uple (Horizontal, Vertical). set grid occupy position. works with the Grid() Element.                                                                                                    </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> sizepolicy </td>
+                    <td> Tuple (Horizontal, Vertical). set widget stretch rule. Takes "fixed" for widget stay fixed on window size change. "expand" for widget to stretch in the direction of window size change. </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> hidden     </td>
+                    <td> hide widget                                                                                                                                                                              </td>
+                </tr>
+            
+            </table>
+        </section>
+    
+        <!-- IMAGE WIDGET -->
+        <section class="ref-section" id="image-widget">
+            <div class="ref-title">IMAGE WIDGET</div>
+            
+            <div class="ref-properties">
+                <p><span>source </span> =  None</p>
+                <p><span>id </span> =  None</p>
+                <p><span>size </span> =  None</p>
+                <p><span>alignment </span> =  None</p>
+                <p><span>grid </span> =  (None, None)</p>
+                <p><span>sizepolicy </span> =  (None, None)</p>
+                <p><span>hidden </span> =  False</p>
+            </div>
+            
+            <table class="ref-table">
+                <th style="width: 15%">Type</th><th style="width:15%">Name</th><th>Meaning</th>
+                <tr>
+                    <td> str   </td>
+                    <td> source     </td>
+                    <td> path to image file.                                                                                                                                                                      </td>
+                </tr>
+            
+                <tr>
+                    <td> any   </td>
+                    <td> id         </td>
+                    <td> Widget id for representing and calling widget in other code parts and styling                                                                                                            </td>
+                </tr>
+            
+                <tr>
+                    <td> int   </td>
+                    <td> size       </td>
+                    <td> set the size of the widget.                                                                                                                                                              </td>
+                </tr>
+            
+                <tr>
+                    <td> str   </td>
+                    <td> alignment  </td>
+                    <td> set alignment of image                                                                                                                                                                   </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple </td>
+                    <td> grid       </td>
+                    <td> Tuple (Horizontal, Vertical). set grid occupy position. works with the Grid() Element.                                                                                                   </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple </td>
+                    <td> sizepolicy </td>
+                    <td> Tuple (Horizontal, Vertical). set widget stretch rule. Takes "fixed" for widget stay fixed on window size change. "expand" for widget to stretch in the direction of window size change. </td>
+                </tr>
+            
+                <tr>
+                    <td> bool  </td>
+                    <td> hidden     </td>
+                    <td> hide widget                                                                                                                                                                              </td>
+                </tr>
+            
+            </table>
+        </section>
+    
+        <!-- CHECKBOX WIDGET -->
+        <section class="ref-section" id="checkbox-widget">
+            <div class="ref-title">CHECKBOX WIDGET</div>
+            
+            <div class="ref-properties">
+                <p><span>label </span> =  ''</p>
+                <p><span>checked </span> =  False</p>
+                <p><span>id </span> =  None</p>
+                <p><span>state_changed </span> =  None</p>
+                <p><span>toggled </span> =  None</p>
+                <p><span>grid </span> =  (None, None)</p>
+                <p><span>sizepolicy </span> =  (None, None)</p>
+            </div>
+            
+            <table class="ref-table">
+                <th style="width: 15%">Type</th><th style="width:15%">Name</th><th>Meaning</th>
+                <tr>
+                    <td> any      </td>
+                    <td> label         </td>
+                    <td> set checkbox label or text                                                                                                                                                               </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> checked       </td>
+                    <td> set checkbox selected on first runs. default False                                                                                                                                       </td>
+                </tr>
+            
+                <tr>
+                    <td> any      </td>
+                    <td> id            </td>
+                    <td> Widget id for representing and calling widget in other code parts and styling                                                                                                            </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> state_changed </td>
+                    <td> fucntion to execute if checkbox state is changed.                                                                                                                                        </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> toggled       </td>
+                    <td> function to execute when checkbox is toggled. checked / unchecked                                                                                                                        </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> grid          </td>
+                    <td> Tuple (Horizontal, Vertical). set grid occupy position. works with the Grid() Element.                                                                                                   </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> sizepolicy    </td>
+                    <td> Tuple (Horizontal, Vertical). set widget stretch rule. Takes "fixed" for widget stay fixed on window size change. "expand" for widget to stretch in the direction of window size change. </td>
+                </tr>
+            
+            </table>
+        </section>
+    
+        <!-- RADIOBUTTON WIDGET -->
+        <section class="ref-section" id="radiobutton-widget">
+            <div class="ref-title">RADIOBUTTON WIDGET</div>
+            
+            <div class="ref-properties">
+                <p><span>label </span> =  ''</p>
+                <p><span>checked </span> =  False</p>
+                <p><span>id </span> =  None</p>
+                <p><span>state_changed </span> =  None</p>
+                <p><span>toggled </span> =  None</p>
+                <p><span>grid </span> =  (None, None)</p>
+                <p><span>sizepolicy </span> =  (None, None)</p>
+            </div>
+            
+            <table class="ref-table">
+                <th style="width: 15%">Type</th><th style="width:15%">Name</th><th>Meaning</th>
+                <tr>
+                    <td> any      </td>
+                    <td> label         </td>
+                    <td> set radiobutton label or text                                                                                                                                                            </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> checked       </td>
+                    <td> set radiobutton selected on first runs. default False                                                                                                                                    </td>
+                </tr>
+            
+                <tr>
+                    <td> any      </td>
+                    <td> id            </td>
+                    <td> Widget id for representing and calling widget in other code parts and styling                                                                                                            </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> state_changed </td>
+                    <td> fucntion to execute if radiobutton state is changed.                                                                                                                                     </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> toggled       </td>
+                    <td> fucntion to execute if widget is toggled                                                                                                                                                 </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> grid          </td>
+                    <td> Tuple (Horizontal, Vertical). set grid occupy position. works with the Grid() Element.                                                                                                   </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> sizepolicy    </td>
+                    <td> Tuple (Horizontal, Vertical). set widget stretch rule. Takes "fixed" for widget stay fixed on window size change. "expand" for widget to stretch in the direction of window size change. </td>
+                </tr>
+            
+            </table>
+        </section>
+    
+        <!-- TEXTAREA WIDGET -->
+        <section class="ref-section" id="textarea-widget">
+            <div class="ref-title">TEXTAREA WIDGET</div>
+            
+            <div class="ref-properties">
+                <p><span>id </span> =  None</p>
+                <p><span>placeholder </span> =  None</p>
+                <p><span>hidden </span> =  None</p>
+                <p><span>alignment </span> =  None</p>
+                <p><span>value </span> =  None</p>
+                <p><span>disabled </span> =  False</p>
+                <p><span>readonly </span> =  False</p>
+                <p><span>text_changed </span> =  None</p>
+                <p><span>selection_changed </span> =  None</p>
+                <p><span>undo_available </span> =  None</p>
+                <p><span>redo_available </span> =  None</p>
+                <p><span>maxlength </span> =  None</p>
+                <p><span>font </span> =  None</p>
+                <p><span>fontsize </span> =  None</p>
+                <p><span>sizepolicy </span> =  (None, None)</p>
+                <p><span>grid </span> =  No(None, None)e</p>
+                <p><span>tabwidth </span> =  None</p>
+                <p><span>wordwrap </span> =  False</p>
+            </div>
+            
+            <table class="ref-table">
+                <th style="width: 15%">Type</th><th style="width:15%">Name</th><th>Meaning</th>
+                <tr>
+                    <td> any      </td>
+                    <td> id                </td>
+                    <td> Widget id for representing and calling widget in other code parts and styling                                                                                                            </td>
+                </tr>
+            
+                <tr>
+                    <td> any      </td>
+                    <td> placeholder       </td>
+                    <td> set placeholder text for the widget                                                                                                                                                      </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> hidden            </td>
+                    <td> hide widget                                                                                                                                                                              </td>
+                </tr>
+            
+                <tr>
+                    <td> str      </td>
+                    <td> alignment         </td>
+                    <td> set text alignment in the widget                                                                                                                                                         </td>
+                </tr>
+            
+                <tr>
+                    <td> any      </td>
+                    <td> value             </td>
+                    <td> sets default value of the textarea widget                                                                                                                                                </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> disabled          </td>
+                    <td> set textarea disabled or uneditable. Lacks interaction, usually inactive. default False                                                                                                  </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> readonly          </td>
+                    <td> set textarea to read only. visually active but value unchangeable. default False                                                                                                         </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> text_changed      </td>
+                    <td> ucntion to execute if textarea value is changed                                                                                                                                          </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> selection_changed </td>
+                    <td> function to execute if a selected value is changed.                                                                                                                                      </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> undo_available    </td>
+                    <td> function to execute of undo is available for the textarea widget                                                                                                                         </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> redo_available    </td>
+                    <td> function to execute of redo is available for the textarea widget                                                                                                                         </td>
+                </tr>
+            
+                <tr>
+                    <td> int      </td>
+                    <td> maxlength         </td>
+                    <td> set maximum value length of a textarea                                                                                                                                                   </td>
+                </tr>
+            
+                <tr>
+                    <td> str      </td>
+                    <td> font              </td>
+                    <td> set textarea value font family. example Arial                                                                                                                                            </td>
+                </tr>
+            
+                <tr>
+                    <td> int      </td>
+                    <td> fontsize          </td>
+                    <td> set textarea value size                                                                                                                                                                  </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> sizepolicy        </td>
+                    <td> Tuple (Horizontal, Vertical). set widget stretch rule. Takes "fixed" for widget stay fixed on window size change. "expand" for widget to stretch in the direction of window size change. </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> grid              </td>
+                    <td> Tuple (Horizontal, Vertical). set grid occupy position. works with the Grid() Element.                                                                                                   </td>
+                </tr>
+            
+                <tr>
+                    <td> int      </td>
+                    <td> tabwidth          </td>
+                    <td> set the tab width of textarea values.                                                                                                                                                    </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> wordwrap          </td>
+                    <td> contain word overflow in application window. default False.                                                                                                                              </td>
+                </tr>
+            
+            </table>
+        </section>
+    
+        <!-- LISTWIDGET WIDGET -->
+        <section class="ref-section" id="listwidget">
+            <div class="ref-title">LISTWIDGET WIDGET</div>
+            
+            <div class="ref-properties">
+                <p><span>list_items </span> =  None</p>
+                <p><span>id </span> =  None</p>
+                <p><span>mode </span> =  None</p>
+                <p><span>grid </span> =  (None, None)</p>
+                <p><span>sizepolicy </span> =  (None, None)</p>
+                <p><span>func </span> =  None</p>
+            </div>
+            
+            <table class="ref-table">
+                <th style="width: 15%">Type</th><th style="width:15%">Name</th><th>Meaning</th>
+                <tr>
+                    <td> any      </td>
+                    <td> list_items </td>
+                    <td> items for the list widget                                                                                                                                                                </td>
+                </tr>
+            
+                <tr>
+                    <td> any      </td>
+                    <td> id         </td>
+                    <td> Widget id for representing and calling widget in other code parts and styling                                                                                                            </td>
+                </tr>
+            
+                <tr>
+                    <td> str      </td>
+                    <td> mode       </td>
+                    <td> ...                                                                                                                                                                                      </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> grid       </td>
+                    <td> Tuple (Horizontal, Vertical). set grid occupy position. works with the Grid() Element.                                                                                                   </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> sizepolicy </td>
+                    <td> Tuple (Horizontal, Vertical). set widget stretch rule. Takes "fixed" for widget stay fixed on window size change. "expand" for widget to stretch in the direction of window size change. </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> func       </td>
+                    <td> function to execute if listwidget is interacted with                                                                                                                                     </td>
+                </tr>
+            
+            </table>
+        </section>
+    
+        <!-- SELECT WIDGET -->
+        <section class="ref-section" id="select-widget">
+            <div class="ref-title">SELECT WIDGET</div>
+            
+            <div class="ref-properties">
+                <p><span>option </span> =  None</p>
+                <p><span>id </span> =  None</p>
+                <p><span>placeholder </span> =  None</p>
+                <p><span>grid </span> =  (None, None)</p>
+                <p><span>sizepolicy </span> =  (None, None)</p>
+                <p><span>current_text_changed </span> =  None</p>
+                <p><span>activated </span> =  None</p>
+            </div>
+            
+            <table class="ref-table">
+                <th style="width: 15%">Type</th><th style="width:15%">Name</th><th>Meaning</th>
+                <tr>
+                    <td> any      </td>
+                    <td> option               </td>
+                    <td> options for select widget                                                                                                                                                                </td>
+                </tr>
+            
+                <tr>
+                    <td> any      </td>
+                    <td> id                   </td>
+                    <td> Widget id for representing and calling widget in other code parts and styling                                                                                                            </td>
+                </tr>
+            
+                <tr>
+                    <td> any      </td>
+                    <td> placeholder          </td>
+                    <td> set default option for select widget                                                                                                                                                     </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> grid                 </td>
+                    <td> Tuple (Horizontal, Vertical). set grid occupy position. works with the Grid() Element.                                                                                                   </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> sizepolicy           </td>
+                    <td> Tuple (Horizontal, Vertical). set widget stretch rule. Takes "fixed" for widget stay fixed on window size change. "expand" for widget to stretch in the direction of window size change. </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> current_text_changed </td>
+                    <td> function of execute if option is changed                                                                                                                                                 </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> activated            </td>
+                    <td> ...                                                                                                                                                                                      </td>
+                </tr>
+            
+            </table>
+        </section>
+    
+        <!-- PROGRESSBAR WIDGET -->
+        <section class="ref-section" id="progressbar-widget">
+            <div class="ref-title">PROGRESSBAR WIDGET</div>
+            
+            <div class="ref-properties">
+                <p><span>id </span> =  None</p>
+                <p><span>min </span> =  0</p>
+                <p><span>max </span> =  0</p>
+                <p><span>value </span> =  None</p>
+                <p><span>orientation </span> =  horizontal</p>
+                <p><span>grid </span> =  (None, None)</p>
+                <p><span>sizepolicy </span> =  (None, None)</p>
+                <p><span>text_visible </span> =  True</p>
+                <p><span>inverted </span> =  False</p>
+                <p><span>value_changed </span> =  None</p>
+            </div>
+            
+            <table class="ref-table">
+                <th style="width: 15%">Type</th><th style="width:15%">Name</th><th>Meaning</th>
+                <tr>
+                    <td> any      </td>
+                    <td> id            </td>
+                    <td> Widget id for representing and calling widget in other code parts and styling                                                                                                            </td>
+                </tr>
+            
+                <tr>
+                    <td> int      </td>
+                    <td> min           </td>
+                    <td> set minimum value                                                                                                                                                                        </td>
+                </tr>
+            
+                <tr>
+                    <td> int      </td>
+                    <td> max           </td>
+                    <td> set maximum value                                                                                                                                                                        </td>
+                </tr>
+            
+                <tr>
+                    <td> int      </td>
+                    <td> value         </td>
+                    <td> set progressbar value                                                                                                                                                                    </td>
+                </tr>
+            
+                <tr>
+                    <td> str      </td>
+                    <td> orientation   </td>
+                    <td> set progressbar orientation                                                                                                                                                              </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> grid          </td>
+                    <td> Tuple (Horizontal, Vertical). set grid occupy position. works with the Grid() Element.                                                                                                   </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> sizepolicy    </td>
+                    <td> Tuple (Horizontal, Vertical). set widget stretch rule. Takes "fixed" for widget stay fixed on window size change. "expand" for widget to stretch in the direction of window size change. </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> text_visible  </td>
+                    <td> set progress bar text visible                                                                                                                                                            </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> inverted      </td>
+                    <td> run progress backwards                                                                                                                                                                   </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> value_changed </td>
+                    <td> function to execute when progressbar value changes                                                                                                                                       </td>
+                </tr>
+            
+            </table>
+        </section>
+    
+        <!-- SLIDER WIDGET -->
+        <section class="ref-section" id="slider-widget">
+            <div class="ref-title">SLIDER WIDGET</div>
+            
+            <div class="ref-properties">
+                <p><span>id </span> =  None</p>
+                <p><span>min </span> =  0</p>
+                <p><span>max </span> =  0</p>
+                <p><span>value </span> =  None</p>
+                <p><span>step </span> =  None</p>
+                <p><span>orientation </span> =  horizontal</p>
+                <p><span>grid </span> =  (None, None)</p>
+                <p><span>sizepolicy </span> =  (None, None)</p>
+                <p><span>value_changed </span> =  None</p>
+            </div>
+            
+            <table class="ref-table">
+                <th style="width: 15%">Type</th><th style="width:15%">Name</th><th>Meaning</th>
+                <tr>
+                    <td> any      </td>
+                    <td> id            </td>
+                    <td> Widget id for representing and calling widget in other code parts and styling                                                                                                            </td>
+                </tr>
+            
+                <tr>
+                    <td> int      </td>
+                    <td> min           </td>
+                    <td> set minimum value                                                                                                                                                                        </td>
+                </tr>
+            
+                <tr>
+                    <td> int      </td>
+                    <td> max           </td>
+                    <td> set maximum value                                                                                                                                                                        </td>
+                </tr>
+            
+                <tr>
+                    <td> int      </td>
+                    <td> value         </td>
+                    <td> set slider value                                                                                                                                                                         </td>
+                </tr>
+            
+                <tr>
+                    <td> int      </td>
+                    <td> step          </td>
+                    <td> set increase value steps for slider                                                                                                                                                      </td>
+                </tr>
+            
+                <tr>
+                    <td> str      </td>
+                    <td> orientation   </td>
+                    <td> set slidebar orientation                                                                                                                                                                 </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> grid          </td>
+                    <td> Tuple (Horizontal, Vertical). set grid occupy position. works with the Grid() Element.                                                                                                   </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> sizepolicy    </td>
+                    <td> Tuple (Horizontal, Vertical). set widget stretch rule. Takes "fixed" for widget stay fixed on window size change. "expand" for widget to stretch in the direction of window size change. </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> value_changed </td>
+                    <td> function to execute when slider value changes                                                                                                                                            </td>
+                </tr>
+            
+            </table>
+        </section>
+    
+        <!-- DIAL WIDGET -->
+        <section class="ref-section" id="dial-widget">
+            <div class="ref-title">DIAL WIDGET</div>
+            
+            <div class="ref-properties">
+                <p><span>id </span> =  None</p>
+                <p><span>min </span> =  0</p>
+                <p><span>max </span> =  0</p>
+                <p><span>value </span> =  None</p>
+                <p><span>tick_target </span> =  None</p>
+                <p><span>tick </span> =  False</p>
+                <p><span>wrapping </span> =  False</p>
+                <p><span>grid </span> =  (None, None)</p>
+                <p><span>sizepolicy </span> =  (None, None)</p>
+                <p><span>value_changed </span> =  None</p>
+            </div>
+            
+            <table class="ref-table">
+                <th style="width: 15%">Type</th><th style="width:15%">Name</th><th>Meaning</th>
+                <tr>
+                    <td> any      </td>
+                    <td> id            </td>
+                    <td> Widget id for representing and calling widget in other code parts and styling                                                                                                            </td>
+                </tr>
+            
+                <tr>
+                    <td> int      </td>
+                    <td> min           </td>
+                    <td> set minimum value                                                                                                                                                                        </td>
+                </tr>
+            
+                <tr>
+                    <td> int      </td>
+                    <td> max           </td>
+                    <td> set maximum value                                                                                                                                                                        </td>
+                </tr>
+            
+                <tr>
+                    <td> int      </td>
+                    <td> value         </td>
+                    <td> set dial value                                                                                                                                                                           </td>
+                </tr>
+            
+                <tr>
+                    <td> any      </td>
+                    <td> tick_target   </td>
+                    <td> ...                                                                                                                                                                                      </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> tick          </td>
+                    <td> show dial ticks or markers                                                                                                                                                               </td>
+                </tr>
+            
+                <tr>
+                    <td> bool     </td>
+                    <td> wrapping      </td>
+                    <td> ...                                                                                                                                                                                      </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> grid          </td>
+                    <td> Tuple (Horizontal, Vertical). set grid occupy position. works with the Grid() Element.                                                                                                   </td>
+                </tr>
+            
+                <tr>
+                    <td> tuple    </td>
+                    <td> sizepolicy    </td>
+                    <td> Tuple (Horizontal, Vertical). set widget stretch rule. Takes "fixed" for widget stay fixed on window size change. "expand" for widget to stretch in the direction of window size change. </td>
+                </tr>
+            
+                <tr>
+                    <td> function </td>
+                    <td> value_changed </td>
+                    <td> function to execute when slider value changes                                                                                                                                            </td>
+                </tr>
+            
+            </table>
+        </section>
+    
+    </div>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="clera" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee.  😁" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <footer><p>Copyright © 2023</p></footer>
+    <script src="script.js"></script>
+    <style>
+        .ref-table {
+            border-collapse: collapse;
+        }
+
+        .ref-table tr {
+            border-bottom: 1px solid #343434;
+            text-align: left;
+            background: white;
+
+        }
+
+        .ref-table td {
+            padding: 10px;
+            color: #0d0d0d;
+        }
+
+        .ref-table th {
+            padding: 10px;
+            background: rgba(180, 180, 180, 0.74);
+            color: rgb(166, 3, 3)
+        }
+        
+        .ref-section {
+            width: 80%;
+            margin: 0 auto;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 25px;
+        }
+        
+        .ref-title {
+            background: #343434;
+            color: #E79512;
+            text-align: center;
+            padding: 15px;
+            margin-bottom: 15px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .ref-properties {
+            /* background: rgba(180, 180, 180, 0.74); */
+            background: white;
+            padding: 0 10px;
+            border-left: 5px solid #343434;
+            color: #343434;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .ref-properties p {
+            padding: 2.5px 0;
+        }
+
+        .ref-properties span{
+            color: rgb(166, 3, 3);
+        }
+
+        .ref-table:last-of-type{
+            border-bottom:  2px solid white;
+        }
+
+        #side-panel {
+            height: 40vh;
+            width: 20%;
+            position: absolute;
+            /* border: 1px solid red; */
+            position: fixed;
+            padding: 10px 0;
+        }
+
+        #side-panel a {
+            border: 0px solid;
+            text-decoration: none;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: rgb(64, 64, 64);
+            /* font-weight: bold; */
+            padding: 2px 10px ;
+            cursor: pointer;
+        }
+
+        #side-panel a:hover {
+            border-left: 1px solid red;
+            color: red;
+        }
+
+        #side-panel p {
+            padding: 1px 0;
+        }
+
+        #panel-links {
+            margin: 0 auto;
+            width: 80%;
+        }
+    </style>
+</body>
+</html>

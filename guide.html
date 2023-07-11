@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="hand-drawn-icon.png">
+</head>
+<body>
+    <nav>
+        <div>
+            <span id="project-name"><a id="Logo-name" href="index.html"><img src="hand-drawn-icon.png" alt="">CLERA</a></span>
+            <a href="guide.html">Guide</a>
+            <a href="news.html">News</a>
+            <a href="projects.html">Projects</a>
+            <a href="changelog.html">Changelog</a>
+            <a href="reference.html">Reference</a>
+            <a href="#" id="donate-button">Donate</a>
+        </div>
+    </nav>
+    <div id="wrapper">
+        <section class="codearea">
+            <textarea id="code-1" hidden>
+    from clera import *	
+    window = Window()
+    # code goes here
+    window.run()</textarea>
+    
+            <table><tr><td class="linenumber">1</td><td class="code"><span class="builtin">from</span> <span class="class">clera</span> <span class="builtin">import</span> <span class="operators">*</span></td><td class="copy"><a id="copy" onclick="copycode('code-1')">📋</a></td></tr>
+                <tr><td class="linenumber">2</td><td class="code"><span class="variable">window</span> <span class="operators">=</span> <span class="class">Window</span><span class="symbol">(</span><span class="symbol">)</span></td></tr>
+                <tr><td class="linenumber">3</td><td class="code"># code goes here</td></tr>
+                <tr><td class="linenumber">4</td><td class="code"><span class="variable">window</span>.<span class="function">run</span><span class="symbol">(</span><span class="symbol">)</span></td></tr></table>    
+        </section>
+        <section class="guide-section">
+            <div class="guide-card">
+                <p class="date-time">9TH JULY, 2023</p>
+                <p>Oops... Guide Unavailable! </p>
+                <!-- <p class="learn-more">LEARN MORE</p> -->
+            </div>
+        </section>
+    </div>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="clera" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee.  😁" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <footer><p>Copyright © 2023</p></footer>
+    <script src="script.js"></script>
+    <style>
+        .guide-section {
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .guide-card {
+            /* background-color: red; */
+            padding: 25px 30px;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            color: white;
+            background: #343434;
+            border-radius: 5px;
+        }
+/* 
+        .news-card:hover {
+            background: red;
+        } */
+
+        .date-time {
+            color: #E79512;
+            margin-bottom: 10px;
+        }
+
+        .learn-more {
+            background: red;
+            margin-top: 10px;
+            width: fit-content;
+            padding: 10px 20px;
+            margin-left: auto;
+        }
+
+        .learn-more:hover {
+            background: white;
+            color: black;
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="hand-drawn-icon.png">
+</head>
+<body>
+    <nav>
+        <div>
+            <span id="project-name"><a id="Logo-name" href="index.html"><img src="hand-drawn-icon.png" alt="">CLERA</a></span>
+            <a href="guide.html">Guide</a>
+            <a href="news.html">News</a>
+            <a href="projects.html">Projects</a>
+            <a href="changelog.html">Changelog</a>
+            <a href="reference.html">Reference</a>
+            <a href="#" id="donate-button">Donate</a>
+        </div>
+    </nav>
+    <div id="wrapper">
+        <section class="changelog-section">
+            <div class="title-card" id="log">CHANGELOG</div>
+        </section>
+
+        <section class="changelog-section" id="1">
+            <input type="text" value="off" id="status-1" hidden>
+            
+            <div class="title-card" onclick="check('1')" id="title-1">0.0.1  - [ 11 APRIL 2023 ]</div>
+            
+            <div class="details-card" id="card-1">
+                <p>[ <span class="detail-title">NOTICE</span> ]</p>
+                <p>[ <span class="detail-marker">!</span> ] - Initial Release</p>
+            </div>
+        </section>
+
+        <section class="changelog-section" id="2">
+            <input type="text" value="off" id="status-2" hidden>
+            <div class="title-card" onclick="check('2')" id="title-2"> 0.0.2 - 0.0.5  </div>
+            <div class="details-card" id="card-2">
+				<p>[ <span class="detail-title">INFO</span> ]</p>
+				<p>[ <span class="detail-marker">+</span> ] Upload and Import Error</p>
+            </div>
+        </section>
+
+        <section class="changelog-section" id="3">
+            <input type="text" value="off" id="status-3" hidden>
+            <div class="title-card" onclick="check('3')" id="title-3"> 0.0.6 - [ 11 APRIL 2023 ]  </div>
+            <div class="details-card" id="card-3">
+				<p>[ <span class="detail-title">NOTICE</span> ]</p>
+				<p>[ <span class="detail-marker">+</span> ] Module Install fixed</p>
+            </div>
+        </section>
+
+
+        <section class="changelog-section" id="4">
+            <input type="text" value="off" id="status-4" hidden>
+            <div class="title-card" onclick="check('4')" id="title-4"> 0.0.7 - [ 25 APRIL 2023 ]  </div>
+            <div class="details-card" id="card-4">
+				<p>[ <span class="detail-title">ADDED</span> ]</p>
+				<p>[ <span class="detail-marker">+</span> ] Cursor change on titlebar drag</p>
+				<p>[ <span class="detail-marker">+</span> ] Get window detailes</p>
+				<p>[ <span class="detail-marker">+</span> ] Persistent styling</p>
+				<p>[ <span class="detail-marker">+</span> ] Custom window widget spacing</p>
+				<p>[ <span class="detail-marker">+</span> ] Custom window margin</p>
+				<br>
+				<p>[ <span class="detail-title">FIXED</span> ]</p>
+				<p>[ <span class="detail-marker">+</span> ] Extra space between widgets</p>
+				<p>[ <span class="detail-marker">+</span> ] Custom Titlebar</p>
+				<p>[ <span class="detail-marker">+</span> ] Window glitch using "Titlebar" element, "add"  and "update" method</p>
+				<br>
+				<p>[ <span class="detail-title">REMOVED</span> ]</p>
+				<p>[ <span class="detail-marker">+</span> ] Clera default titlebar style</p>
+            </div>
+        </section>
+
+        <section class="changelog-section" id="5">
+            <input type="text" value="off" id="status-5" hidden>
+            <div class="title-card" onclick="check('5')" id="title-5"> 0.0.8 - [ 04 JULY 2023 ] </div>
+            <div class="details-card" id="card-5">
+				<p>[ <span class="detail-title">ADDED</span> ]</p>
+				<p>[ <span class="detail-marker">+</span> ] Extra controls of Window</p>
+				<p>[ <span class="detail-marker">+</span> ] Stack Element for multi page development</p>
+				<p>[ <span class="detail-marker">+</span> ] Extraction, Styling and Linking of Textarea scrollbar</p>
+				<p>[ <span class="detail-marker">+</span> ] Wordwrap for Textarea</p>
+				<p>[ <span class="detail-marker">+</span> ] Popup Window lock</p>
+				<br>
+				<p>[ <span class="detail-title">FIXED</span> ]</p>
+				<p>[ <span class="detail-marker">+</span> ] Windows style control icon</p>
+				<p>[ <span class="detail-marker">+</span> ] Fusion style control icon</p>
+				<p>[ <span class="detail-marker">+</span> ] File Element filter definition error</p>
+				<br>
+				<p>[ <span class="detail-title">CHANGED</span> ]</p>
+				<p>[ <span class="detail-marker">+</span> ] Default window spacing and content margin</p>
+				<p>[ <span class="detail-marker">+</span> ] Stylesheet linking extension. Now only useds ".cx" extension</p>
+            </div>
+        </section>
+
+        <section class="changelog-section" id="6">
+            <input type="text" value="off" id="status-6" hidden>
+            <div class="title-card" onclick="check('6')" id="title-6"> 0.1.0 - [ 11 JULY 2023 ] </div>
+            <div class="details-card" id="card-6">
+				<p>[ <span class="detail-title">ADDED</span> ]</p>
+				<p>[ <span class="detail-marker">+</span> ] Quick argument values</p>
+				<p>[ <span class="detail-marker">+</span> ] Clera Style Editor</p>
+				<br>
+				<p>[ <span class="detail-title">CHANGED</span> ]</p>
+				<p>[ <span class="detail-marker">+</span> ] sizepolicy declaration</p>
+				<br>
+				<p>[ <span class="detail-title">FIXED</span> ]</p>
+				<p>[ <span class="detail-marker">+</span> ] ModuleNotFoundError: No module named 'clera.stubs'</p>
+				<p>[ <span class="detail-marker">+</span> ] Window icon display</p>
+				<p>[ <span class="detail-marker">+</span> ] AttributeError: 'MainWindow' object has no attribute 'old_position'</p>
+				<br>
+				<br>
+            </div>
+        </section>
+
+        <section class="changelog-section">
+            <div class="title-card" id="end">END</div>
+        </section>
+    </div>
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="clera" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee.  😁" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+    <footer><p>Copyright © 2023</p></footer>
+    <script src="script.js"></script>
+    <style>
+        .changelog-section {
+            margin: 0px auto;
+            width: 60%;
+            margin-bottom: 10px;
+        }
+
+        .title-card {
+            background: rgb(166, 3, 3);
+            padding: 15px 0;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .title-card:hover {
+            background-color: white;
+            color: black;
+        }
+
+        .details-card {
+            color: white;
+            background: #343434;
+            padding: 15px 50px 15px 50px;
+            display: None;
+            cursor: default;
+        }
+
+        .details-card p{
+            margin: 5px 0;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        .detail-title {
+            color: red;
+        }
+
+        .detail-marker {
+            color: #E79512;
+        }
+
+        #log {
+            color: #E79512;
+            background: #343434;
+            font-size: 16px;
+            margin-bottom: -5px;
+        }
+
+        #log:hover {
+            color: #E79512;
+        }
+
+        #end {
+            color: #E79512;
+            background: #343434;
+            font-size: 16px;
+            margin-top: -5px;
+        }
+
+        #end:hover {
+            color: #E79512;
+        }
+    </style>
+</body>
+</html>
