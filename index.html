@@ -22,7 +22,8 @@
     </nav>
     <div id="wrapper">
         <section>
-            <p id="moto"><q>Why complicate simplicity?</q></p>
+            <div id="main">
+                <p id="moto"><q>Why complicate simplicity?</q></p>
             <div id="message">
                 <img src="code.png" alt="">
                 <p>Clera is python module for developing GUI quickly and simply with low learning curve</p>
@@ -43,10 +44,192 @@
                     <Li>Mac</Li>
                 </ul>
             </div>
-            <p id="installation">pip install clera</p>
+            </div>
+            <!-- <p id="installation">pip install clera</p> -->
+            <div id="doc-info">
+                <p id="documentation">DOCUMENTATION</p>
+                <section class="docs">
+                    <p>
+                        Clera is python module for writing Graphical User Interfaces and it is developed on PySide6 module. This means using clera, you can write GUI applications for all platforms (Windows, Linux, Mac and others) with native interface.
+                    </p>
+    
+                    <p>
+                        Clera is easy to learn, fast to write and made as simple as possible due to its motto: “Why Complicate SImplicity?”, this makes it best choice for anyone who wants to develop a GUI application without much hussle and those who wants to try GUI development in general. Clera is pronounced “Clearer” which represents “more clear” based on the idea of writing great GUI with fewer lines of clear code.
+                    </p>
+                </section>
+    
+                <section class="docs">
+                    <p>
+                        In order to use clera you need to have basic knowlege of python. If you have no knowlege in python, I recommend you learn a little about python and its basics. Since clera is written with python, its fundermental usage is based on python and this will come later when writing the core functionality of widgets and elements of your GUI application.
+                    </p>
+                    <p>
+                        <font style="color: rgb(166, 3, 3); font-weight: bold;">NOTE:</font> <font style="color: rgb(27, 27, 27); font-style: italic;">Clera has a lot of classes and you don't need to learn all of them. All you need to learn are the classes you will use by recognizing what you want and need.</font>
+                    </p>
+                </section>
+                <section class="docs">
+                    <p>
+                        <font style="color: rgb(166, 3, 3); font-weight: bold;">
+                            Setting The Foundation
+                        </font>
+                    </p>
+                    <p>
+                        <font style="color: #E79512; font-weight: bold;">What is a Window()?</font><br>
+                        A window is a viewing area on a computer display screen that allows viewing areas as part of a Graphical User Interface (GUI). Hence the Window() class is the most important part of clera because is the class on which all other this such as widget, element and layouts are drawn. Without the “Window()” class, there is will be no “window”. You can create window by importing it from the clera module “from clera import Window”, calling the “Window()” class and to display the window, call the "run()" method on it.
+                    </p>
+                    <p>
+                        <font style="color: rgb(166, 3, 3)">NOTE:</font> <font style="color: rgb(27, 27, 27); font-style: italic;">It is recommended to import every widget, layout and elemnts in clera individually.</font>
+                    </p>
+                </section>
+                <section class="docs">
+                    <p>
+                        <font style="color: rgb(166, 3, 3); font-weight: bold;">
+                            EXAMPLE
+                        </font>
+                        
+                    </p>
+                    <section class='codearea'>
+<textarea id='code-1' hidden>
+from clera import Window
+Window().run() 
+</textarea>
+                <table><tr><td class="linenumber">1</td><td class="code"><span class="builtin">from</span> <span class="class">clera</span> <span class="builtin">import</span> <span class="class">Window</span></td><td class="copy"><a id="copy" onclick="copycode('code-1')">📋</a></td></tr>
+                <tr><td class="linenumber">2</td><td class="code"><span class="class">Window</span><span class="symbol">(</span><span class="symbol">)</span>.<span class="function">run</span><span class="symbol">(</span><span class="symbol">)</span> </td></tr></table></section>
+                    <p>
+                        ...and you've created your first window in clera. When using clera, it is recommended to assign the “Window()” class to a variable “window” and calling the run on it. All elements of the window goes in between them.
+    
+                    </p>
+                </section>
+                <section class="docs">
+                    <p>
+                        <font style="color: rgb(166, 3, 3); font-weight: bold;">
+                            EXAMPLE
+                        </font>
+                    </p>
+                    <section class='codearea'>
+<textarea id='code-2' hidden>
+from clera import Window
+window = Window() # initialize window
+# All elements of window goes here!
+window.run() # run window </textarea>
+                        <table><tr><td class="linenumber">1</td><td class="code"><span class="builtin">from</span> <span class="class">clera</span> <span class="builtin">import</span> <span class="class">Window</span></td><td class="copy"><a id="copy" onclick="copycode('code-2')">📋</a></td></tr>
+                        <tr><td class="linenumber">2</td><td class="code"><span class="variable">window</span> <span class="operators">=</span> <span class="class">Window</span><span class="symbol">(</span><span class="symbol">)</span> # initialize window</span></td></tr>
+                        <tr><td class="linenumber">3</td><td class="code"># All elements of window goes here!</td></tr>
+                        <tr><td class="linenumber">4</td><td class="code"><span class="variable">window</span>.<span class="function">run</span><span class="symbol">(</span><span class="symbol">)</span> # run window</td></tr></table></section>
+                </section>
+                <section class="docs">
+                    <p>
+                        <font style="color: rgb(166, 3, 3); font-weight: bold;">
+                            The Window Contents
+                        </font>
+                    </p>
+                    <p>
+                        A blank window is not quite useful hence adding of widgets and layouts. We can consider widgets as books that we are arranging of a book shelf (layouts). These books are arranged in rows from top to bottom. That is the widget and layout system clera uses. 
+                    </p>
+                    <p><img src="image/SHELF.jpg" alt="shelf" style="width: 100%;"></p>
+                    <p>Nested list of which the main list signifies the bookshelf and the list in it each signifies the rows in the bookshelf. The books in the rows of the bookshelf represents the widgets. <br><font style="font-weight: bold; font-style: italic;">There are are two types of layouts in clera. These are the Box Layout and the Grid Layout.</font>.</p>
+                </section>
+                <br>
+                <section class="docs">
+                    <p>
+                        <font style="color: rgb(166, 3, 3); font-weight: bold;">
+                            Box Layout
+                        </font>
+                    </p>
+                    <p>Takes widgets in the nested array and initilize widget position and appearance in application window. Box Layout stretches widgets to occupy row if there is a row longer than its row.</p>
+                    <p align="center"><img src="image/box.jpg" alt="box" style="width: 200px;"></p>
+    
+                </section>
+                <br>
+                <section class="docs">
+                    <p>
+                        <font style="color: rgb(166, 3, 3); font-weight: bold;">
+                            Grid Layout - [Under Development]
+                        </font>
+                    </p>
+                    <p>Automatically arranges the widgets in grids. Takes the row of widget structure and puts it in grid.</p>
+                    <p align="center"><img src="image/grid.jpg" alt="grid" style="width: 200px;"></p>
+                    <p>1 takes the grid position (0, 0), 2 takes the grid position (0, 1), 3 takes the grid position (1,0) just like a matrix.</p>
+                    <p align="center"><img src="image/box-grid.jpg" alt="box-grid" style="width: 300px;"></p>
+                </section>
+                <br>
+                <section class="docs">
+                    <p>
+                        <font style="color: rgb(166, 3, 3); font-weight: bold;">
+                            Quick Start
+                        </font>
+                    </p>
+                    <p>Welcome to clera! The next question is how to create a window with widgets. Here a simple hello clera application showing initialization of the window ant the layout theory.</p>
+                    <section class='codearea'>
+<textarea id='code-3' hidden>
+# Simple Hello Clera! Application
+from clera import *
+window = Window() # Initialize window
+
+# Setting up widgets structure and layout
+Box([
+    [Text('Hello Clera!', alignment=center)]
+])
+
+window.run() # Running the window</textarea>
+                        <table><tr><td class="linenumber">1</td><td class="code"># Simple Hello Clera! Application</td><td class="copy"><a id="copy" onclick="copycode('code-3')">📋</a></td></tr>
+                        <tr><td class="linenumber">2</td><td class="code"><span class="builtin">from</span> <span class="class">clera</span> <span class="builtin">import</span> <span class="operators">*</span></td></tr>
+                        <tr><td class="linenumber">3</td><td class="code"><span class="variable">window</span> <span class="operators">=</span> <span class="class">Window</span><span class="symbol">(</span><span class="symbol">)</span> # Initialize window</td></tr>
+                        <tr><td class="linenumber">4</td><td class="code"></td></tr>
+                        <tr><td class="linenumber">5</td><td class="code"># Setting up widgets structure and layout</td></tr>
+                        <tr><td class="linenumber">6</td><td class="code"><span class="function">Box</span><span class="symbol">(</span><span class="symbol">[</span></td></tr>
+                        <tr><td class="linenumber">7</td><td class="code"><span class="tab"></span><span class="symbol">[</span><span class="class">Text</span><span class="symbol">(</span>'Hello Clera!'<span class="operators">,</span> alignment<span class="operators">=</span>center<span class="symbol">)</span><span class="symbol">]</span></td></tr>
+                        <tr><td class="linenumber">8</td><td class="code"><span class="symbol">]</span><span class="symbol">)</span></td></tr>
+                        <tr><td class="linenumber">9</td><td class="code"></td></tr>
+                        <tr><td class="linenumber">10</td><td class="code"><span class="variable">window</span>.<span class="function">run</span><span class="symbol">(</span><span class="symbol">)</span> # Running the window</td></tr></table></section>
+                        <p>You can do alot more with clera than just adding text on a window screen. Lets see a more complex example where on a button click, the window updates with Hello Clera.</p>
+                        <section class='codearea'>
+<textarea id='code-4' hidden>
+# Complex Hello Clera! Application
+from clera import *
+window = Window() # Initialize window
+
+# function to run when button is clicked
+def message():
+    text_widget = Text('Hello Clera!', alignment=center)
+    GET('-button-').update(text_widget)
+
+'''
+    Adding the Button widget, with button text, 
+    function to run when it has been clicked and 
+    id to for reference in other parts of the code. 
+'''
+Box([
+    [Button('click me', message, id='-button-')]
+])    
+
+window.run() # Running the window</textarea>
+                            <table><tr><td class="linenumber">1</td><td class="code"># Complex Hello Clera! Application</td><td class="copy"><a id="copy" onclick="copycode('code-4')">📋</a></td></tr>
+                            <tr><td class="linenumber">2</td><td class="code"><span class="builtin">from</span> <span class="class">clera</span> <span class="builtin">import</span> <span class="operators">*</span></td></tr>
+                            <tr><td class="linenumber">3</td><td class="code"><span class="variable">window</span> <span class="operators">=</span> <span class="class">Window</span><span class="symbol">(</span><span class="symbol">)</span> # Initialize window</td></tr>
+                            <tr><td class="linenumber">4</td><td class="code"></td></tr>
+                            <tr><td class="linenumber">5</td><td class="code"># function to run when button is clicked</td></tr>
+                            <tr><td class="linenumber">6</td><td class="code"><span class="builtin">def</span> <span class="function">message</span><span class="symbol">(</span><span class="symbol">)</span>:</td></tr>
+                            <tr><td class="linenumber">7</td><td class="code"><span class="tab"></span><span class="variable">text_widget</span> <span class="operators">=</span> <span class="class">Text</span><span class="symbol">(</span>'Hello Clera!'<span class="operators">,</span> alignment<span class="operators">=</span>center<span class="symbol">)</span></td></tr>
+                            <tr><td class="linenumber">8</td><td class="code"><span class="tab"></span><span class="class">GET</span><span class="symbol">(</span>'-button-'<span class="symbol">)</span>.<span class="function">update</span><span class="symbol">(</span><span class="variable">text_widget</span><span class="symbol">)</span></td></tr>
+                            <tr><td class="linenumber">9</td><td class="code"></td></tr>
+                            <tr><td class="linenumber">10</td><td class="code">'''</td></tr>
+                            <tr><td class="linenumber">11</td><td class="code">    Adding the Button widget, with button text, </td></tr>
+                            <tr><td class="linenumber">12</td><td class="code">    function to run when it has been clicked and </td></tr>
+                            <tr><td class="linenumber">13</td><td class="code">    id to for reference in other parts of the code. </td></tr>
+                            <tr><td class="linenumber">14</td><td class="code">'''</td></tr>
+                            <tr><td class="linenumber">15</td><td class="code"><span class="function">Box</span><span class="symbol">(</span><span class="symbol">[</span></td></tr>
+                            <tr><td class="linenumber">16</td><td class="code"><span class="tab"></span><span class="symbol">[</span><span class="class">Button</span><span class="symbol">(</span>'click me'<span class="operators">,</span> <span class="function">message</span><span class="operators">,</span> id<span class="operators">=</span>'-button-'<span class="symbol">)</span><span class="symbol">]</span></td></tr>
+                            <tr><td class="linenumber">17</td><td class="code"><span class="symbol">]</span><span class="symbol">)</span></td></tr>
+                            <tr><td class="linenumber">18</td><td class="code"></td></tr>
+                            <tr><td class="linenumber">19</td><td class="code"><span class="variable">window</span>.<span class="function">run</span><span class="symbol">(</span><span class="symbol">)</span> # Running the window</td></tr></table></section>
+                            
+                </section>
+            </div>
         </section>
+          
 
     </div>
+    <script src="script.js"></script>
     <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="clera" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee.  😁" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
     <footer><p>Copyright © 2023</p></footer>
     <!-- <script>
@@ -134,6 +317,33 @@
             margin: 0 auto;
             margin-top: 45px;
             font-size: 18px;
+        }
+
+        #documentation {
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(166, 3, 3);
+            width: fit-content;
+            margin: 0 auto;
+            margin-top: 25px;
+            font-size: 18px;
+            font-weight: bold;
+            border-bottom: 2px solid rgb(27, 27, 27);
+        }
+
+        #documentation:hover {
+            cursor: pointer;
+        }
+
+        .docs p{
+            font-family: Arial, Helvetica, sans-serif;
+            /* padding: 10px 50px; */
+            margin: 10px auto;
+            width: 80%;
+            font-size: 16px;
+        }
+
+        .tab {
+            margin-right: 30px;
         }
     </style>
 </body>

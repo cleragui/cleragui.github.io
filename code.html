@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!-- <span class="class"></span>
+<span class="builtin"></span>
+<span class="comment"></span>
+<span class="symbol"></span>
+<span class="variable"></span>
+<span class="operators"></span>
+<span class="function"></span>
+<span class="linenumber"></span>
+     -->
+
+    <section class="codearea">
+        <textarea id="code-1" hidden>
+from clera import *	
+window = Window()
+# code goes here
+window.run()</textarea>
+
+        <table><tr><td class="linenumber">1</td><td class="code"><span class="builtin">from</span> <span class="class">clera</span> <span class="builtin">import</span> <span class="operators">*</span></td><td class="copy"><a id="copy" onclick="copycode('code-1')">📋</a></td></tr>
+            <tr><td class="linenumber">2</td><td class="code"><span class="variable">window</span> <span class="operators">=</span> <span class="class">Window</span><span class="symbol">(</span><span class="symbol">)</span></td></tr>
+            <tr><td class="linenumber">3</td><td class="code"># code goes here</td></tr>
+            <tr><td class="linenumber">4</td><td class="code"><span class="variable">window</span>.<span class="function">run</span><span class="symbol">(</span><span class="symbol">)</span></td></tr></table>    
+    </section>
+    <script>
+        function copycode(id) {
+            // Get the text field
+            var copyText = document.getElementById(id);
+
+            // Select the text field
+            copyText.select();
+            copyText.setSelectionRange(0, 99999); // For mobile devices
+
+            // Copy the text inside the text field
+            navigator.clipboard.writeText(copyText.value);
+
+            // Alert the copied text
+            alert("Copied the text: " + copyText.value);
+        } 
+    </script>
+    <style>
+        .codearea {
+            background: rgb(43, 43, 43);
+            font-size: 16px;
+            font-family: 'Droid Sans Mono', 'monospace';
+            padding: 10px 0;
+        }
+
+        .builtin {
+            color: palevioletred;
+        }
+
+        .class {
+            color: rgb(182, 9, 9);
+        }
+
+        .operators {
+            color: rgb(113, 113, 113);
+        }
+
+        .variable {
+            color: rgb(10, 104, 155);
+        }
+
+        .linenumber {
+            text-align: right;
+            color: rgb(113, 113, 113);
+            width: 50px;
+        }
+
+        .copy {
+            width: 5px;
+            padding: 0 20px;
+        }
+
+        .copy #copy {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* .copy #copy:hover {
+            font-size: 24px;
+        } */
+
+        .symbol {
+            color: rgb(242, 242, 9);
+        }
+
+        .code {
+            padding-left: 20px;
+            padding: -39px;
+        }
+
+        .function {
+            color: rgb(192, 125, 0);
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td {
+            padding: 5px auto;
+            color: rgb(97, 136, 39);
+        }
+    </style>
+</body>
+</html>
